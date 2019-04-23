@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>840790792661-1vhrung9rqh03as7k2n6m21cc9vrichd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.840790792661-1vhrung9rqh03as7k2n6m21cc9vrichd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfztl2Ygm_rUBMx9735T9pCwG9_zieiRI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>840790792661</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.co.neon.nene</string>
+	<key>PROJECT_ID</key>
+	<string>nene-prod</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nene-prod.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:840790792661:ios:af79c870623372ba</string>
+	<key>DATABASE_URL</key>
+	<string>https://nene-prod.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,8 @@
+.DS_Store
+Pods
+Carthage
+build
+DerivedData
+$CIRCLE_ARTIFACTS/
+.secret
+

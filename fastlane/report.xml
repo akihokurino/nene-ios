@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.007286">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: clear_derived_data" time="1.014247">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: gym" time="194.069612">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: changelog_from_git_commits" time="0.034298">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: deploygate" time="5.805643">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

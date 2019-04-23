@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nPq-pW-xfh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--認証コードの入力-->
+        <scene sceneID="HQl-TB-IEw">
+            <objects>
+                <viewController storyboardIdentifier="PinCodeViewController" id="nPq-pW-xfh" customClass="PinCodeViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azy-1h-E7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rZ-XS-b8o">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mph-GW-Iyr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMSで受信した番号を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzy-gw-coB">
+                                                <rect key="frame" x="60" y="32" width="255" height="14"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z47-Eg-kDI">
+                                                <rect key="frame" x="0.0" y="78" width="375" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="car-Dr-gUb"/>
+                                                </constraints>
+                                            </containerView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-XS-kBh">
+                                                <rect key="frame" x="133.5" y="190" width="108" height="24"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="認証コードを再送信">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jx0-62-IYp">
+                                                <rect key="frame" x="91.5" y="167" width="192" height="169"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="192" id="2bF-Gt-nKp"/>
+                                                    <constraint firstAttribute="height" constant="169" id="Hdf-FM-0hS"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Jx0-62-IYp" firstAttribute="centerY" secondItem="Mph-GW-Iyr" secondAttribute="centerY" constant="-50" id="1vO-bw-7h7"/>
+                                            <constraint firstItem="Yzy-gw-coB" firstAttribute="top" secondItem="Mph-GW-Iyr" secondAttribute="top" constant="32" id="22X-iC-7ed"/>
+                                            <constraint firstAttribute="trailing" secondItem="z47-Eg-kDI" secondAttribute="trailing" id="4Iw-m8-EWd"/>
+                                            <constraint firstItem="z47-Eg-kDI" firstAttribute="leading" secondItem="Mph-GW-Iyr" secondAttribute="leading" id="5kZ-Ci-dpk"/>
+                                            <constraint firstItem="WQg-XS-kBh" firstAttribute="top" secondItem="z47-Eg-kDI" secondAttribute="bottom" constant="32" id="Q19-GY-MiB"/>
+                                            <constraint firstItem="z47-Eg-kDI" firstAttribute="top" secondItem="Yzy-gw-coB" secondAttribute="bottom" constant="32" id="Zds-kq-4Wz"/>
+                                            <constraint firstItem="WQg-XS-kBh" firstAttribute="centerX" secondItem="Mph-GW-Iyr" secondAttribute="centerX" id="aBz-cO-GZT"/>
+                                            <constraint firstItem="Yzy-gw-coB" firstAttribute="centerX" secondItem="Mph-GW-Iyr" secondAttribute="centerX" id="oFP-Hs-BE4"/>
+                                            <constraint firstItem="Jx0-62-IYp" firstAttribute="centerX" secondItem="Mph-GW-Iyr" secondAttribute="centerX" id="rAp-YW-9qa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mph-GW-Iyr" firstAttribute="top" secondItem="2rZ-XS-b8o" secondAttribute="top" id="8Uq-Ci-TCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mph-GW-Iyr" secondAttribute="trailing" id="PGr-ce-vHI"/>
+                                    <constraint firstItem="Mph-GW-Iyr" firstAttribute="leading" secondItem="2rZ-XS-b8o" secondAttribute="leading" id="QIE-lZ-bGt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mph-GW-Iyr" secondAttribute="bottom" id="gbe-cf-rgo"/>
+                                    <constraint firstItem="Mph-GW-Iyr" firstAttribute="centerX" secondItem="2rZ-XS-b8o" secondAttribute="centerX" id="qWy-i0-7sw"/>
+                                    <constraint firstItem="Mph-GW-Iyr" firstAttribute="centerY" secondItem="2rZ-XS-b8o" secondAttribute="centerY" id="wp8-Vd-bJ6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="2rZ-XS-b8o" firstAttribute="top" secondItem="gro-mS-W1k" secondAttribute="top" id="9Mf-d9-A1m"/>
+                            <constraint firstItem="2rZ-XS-b8o" firstAttribute="bottom" secondItem="gro-mS-W1k" secondAttribute="bottom" id="Cs0-aT-N45"/>
+                            <constraint firstItem="2rZ-XS-b8o" firstAttribute="leading" secondItem="gro-mS-W1k" secondAttribute="leading" id="cuy-Eg-tWu"/>
+                            <constraint firstItem="2rZ-XS-b8o" firstAttribute="trailing" secondItem="gro-mS-W1k" secondAttribute="trailing" id="vvM-0P-XCY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gro-mS-W1k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="認証コードの入力" id="LbK-Pb-rHL">
+                        <barButtonItem key="leftBarButtonItem" image="icon_arrow" id="gwZ-dP-Dug">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="backButton" destination="gwZ-dP-Dug" id="jsz-Kz-903"/>
+                        <outlet property="dialogContainer" destination="Jx0-62-IYp" id="SFw-2E-LOv"/>
+                        <outlet property="enterPinCodeContainer" destination="z47-Eg-kDI" id="2ec-DT-hsL"/>
+                        <outlet property="sendSMSButton" destination="WQg-XS-kBh" id="bXf-8N-Y0Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMm-h8-53k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_arrow" width="24" height="24"/>
+    </resources>
+</document>

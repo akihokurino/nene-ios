@@ -1,0 +1,6 @@
+github "ReactiveX/RxSwift" "4.4.2"
+github "SVProgressHUD/SVProgressHUD" "2.2.5"
+github "Swinject/Swinject" "2.6.0"
+github "WenchaoD/FSCalendar" "2.8.0"
+github "muukii/NextGrowingTextView" "1.4.1"
+github "radex/SwiftyUserDefaults" "4.0.0-alpha.1"

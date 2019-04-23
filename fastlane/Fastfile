@@ -1,0 +1,64 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    clear_derived_data(derived_data_path: "./DerivedData")
+  end
+
+  desc "download existing certificates"
+  lane :certificates do
+    match(type: "development", app_identifier: ["jp.co.neon.nene.dev"], readonly: true)
+    match(type: "development", app_identifier: ["jp.co.neon.nene"], readonly: true)
+    match(type: "adhoc", app_identifier: ["jp.co.neon.nene.dev"], readonly: true)
+    match(type: "adhoc", app_identifier: ["jp.co.neon.nene"], readonly: true)
+    match(type: "appstore", app_identifier: ["jp.co.neon.nene"], readonly: true)
+  end
+
+  desc "Submit Dev to DeployGate"
+  lane :adhoc do
+    gym(
+      scheme: "Nene-Dev",
+      configuration: "Debug",
+      derived_data_path: "./DerivedData",
+      export_method: "ad-hoc",
+      clean: true,
+      output_directory: "build",
+      output_name: "Nene",
+      export_xcargs: "-allowProvisioningUpdates",
+      buildlog_path: "$CIRCLE_ARTIFACTS/xcode_output.log",
+      export_options: {
+        provisioningProfiles: {
+          "jp.co.neon.nene.dev" => "match AdHoc jp.co.neon.nene.dev"
+        },
+        compileBitcode: false
+      }
+    )
+
+    changelog = changelog_from_git_commits(
+      commits_count: 10,
+      pretty: '• %s',
+      include_merges: false
+    )
+
+    deploygate(
+      user: "neon-inc",
+      api_token: "0858acdce970b9da84d8a3bc23ca067e97a97693",
+      message: changelog
+    )
+  end
+end

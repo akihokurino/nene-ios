@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--待機中-->
+        <scene sceneID="kOd-2S-1iU">
+            <objects>
+                <viewController storyboardIdentifier="QueuingListViewController" id="iMN-XK-48L" customClass="QueuingListViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGW-5p-Kfs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bra-pD-BDG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6i-kf-Iik">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnx-ad-odE">
+                                                <rect key="frame" x="16" y="192" width="343" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass" translatesAutoresizingMaskIntoConstraints="NO" id="e4E-MB-MhI">
+                                                <rect key="frame" x="123.5" y="32" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="bK6-Uf-Rys"/>
+                                                    <constraint firstAttribute="height" constant="128" id="xle-It-bdR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci8-9J-eYd">
+                                                <rect key="frame" x="16" y="224" width="343" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="cDt-ob-Y3l"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="があなたの前に並んでいます。">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="  ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="  ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="ご利用が可能になりましたらご連絡を差し上げますので、プッシュ通知の許可をおすすめします。">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <font key="NSOriginalFont" metaFont="smallSystem"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onu-eW-bgF">
+                                                <rect key="frame" x="59.5" y="376" width="256" height="44"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="deviceRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="Mgu-ag-BXu"/>
+                                                    <constraint firstAttribute="height" constant="44" id="cuc-kH-4Sr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="プッシュ通知を設定">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="onu-eW-bgF" firstAttribute="centerX" secondItem="z6i-kf-Iik" secondAttribute="centerX" id="Bn0-mb-nbp"/>
+                                            <constraint firstItem="Wnx-ad-odE" firstAttribute="top" secondItem="e4E-MB-MhI" secondAttribute="bottom" constant="32" id="FST-57-rmY"/>
+                                            <constraint firstItem="e4E-MB-MhI" firstAttribute="centerX" secondItem="z6i-kf-Iik" secondAttribute="centerX" id="HPr-ql-MvA"/>
+                                            <constraint firstAttribute="trailing" secondItem="ci8-9J-eYd" secondAttribute="trailing" constant="16" id="Lh3-cP-s5Z"/>
+                                            <constraint firstItem="e4E-MB-MhI" firstAttribute="top" secondItem="z6i-kf-Iik" secondAttribute="top" constant="32" id="YId-V5-oTp"/>
+                                            <constraint firstItem="onu-eW-bgF" firstAttribute="top" secondItem="ci8-9J-eYd" secondAttribute="bottom" constant="32" id="Z9x-T9-GDt"/>
+                                            <constraint firstItem="Wnx-ad-odE" firstAttribute="leading" secondItem="z6i-kf-Iik" secondAttribute="leading" constant="16" id="fCT-4c-loV"/>
+                                            <constraint firstItem="ci8-9J-eYd" firstAttribute="centerX" secondItem="z6i-kf-Iik" secondAttribute="centerX" id="l1p-So-i67"/>
+                                            <constraint firstItem="ci8-9J-eYd" firstAttribute="leading" secondItem="z6i-kf-Iik" secondAttribute="leading" constant="16" id="vHR-88-3wd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wnx-ad-odE" secondAttribute="trailing" constant="16" id="vrr-RO-kGN"/>
+                                            <constraint firstItem="ci8-9J-eYd" firstAttribute="top" secondItem="Wnx-ad-odE" secondAttribute="bottom" constant="32" id="xP0-ts-lg7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="z6i-kf-Iik" firstAttribute="leading" secondItem="Bra-pD-BDG" secondAttribute="leading" id="5iE-9K-htr"/>
+                                    <constraint firstAttribute="trailing" secondItem="z6i-kf-Iik" secondAttribute="trailing" id="P9s-Sn-YtE"/>
+                                    <constraint firstItem="z6i-kf-Iik" firstAttribute="top" secondItem="Bra-pD-BDG" secondAttribute="top" id="RHn-69-LlK"/>
+                                    <constraint firstAttribute="bottom" secondItem="z6i-kf-Iik" secondAttribute="bottom" id="e6Q-Ro-q6E"/>
+                                    <constraint firstItem="z6i-kf-Iik" firstAttribute="centerY" secondItem="Bra-pD-BDG" secondAttribute="centerY" id="okX-4r-C5A"/>
+                                    <constraint firstItem="z6i-kf-Iik" firstAttribute="centerX" secondItem="Bra-pD-BDG" secondAttribute="centerX" id="vvv-aW-ILG"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bra-pD-BDG" firstAttribute="bottom" secondItem="Kwg-nZ-fBT" secondAttribute="bottom" id="Haw-tu-7rB"/>
+                            <constraint firstItem="Bra-pD-BDG" firstAttribute="trailing" secondItem="Kwg-nZ-fBT" secondAttribute="trailing" id="KIu-WY-HIC"/>
+                            <constraint firstItem="Bra-pD-BDG" firstAttribute="leading" secondItem="Kwg-nZ-fBT" secondAttribute="leading" id="TGG-0t-bYI"/>
+                            <constraint firstItem="Bra-pD-BDG" firstAttribute="top" secondItem="Kwg-nZ-fBT" secondAttribute="top" id="ZPN-NV-KGP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kwg-nZ-fBT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="待機中" id="bC7-B5-ef9">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pOr-sA-UIx"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="pushNotificationButton" destination="onu-eW-bgF" id="vpH-zK-kg8"/>
+                        <outlet property="waitingLabel" destination="Wnx-ad-odE" id="7Y8-Ik-u9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYR-WA-upx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hourglass" width="128" height="128"/>
+    </resources>
+</document>

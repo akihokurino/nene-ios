@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walk Through First View Controller-->
+        <scene sceneID="yOh-8M-AVl">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughFirstViewController" id="fEw-bf-nr2" customClass="WalkThroughFirstViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNv-fg-h6d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_bg" translatesAutoresizingMaskIntoConstraints="NO" id="4at-H7-OqM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チャットで依頼・相談" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-QG-oZv">
+                                <rect key="frame" x="97" y="88" width="181" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLZ-Ra-eXx">
+                                <rect key="frame" x="16" y="124" width="343" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ふわっとした依頼をチャットでするだけで  コンシェルジュが的確に対応します。">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_01" translatesAutoresizingMaskIntoConstraints="NO" id="kbj-NK-1IC">
+                                <rect key="frame" x="50.5" y="174" width="274" height="493"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="493" id="XKY-cU-D4Q"/>
+                                    <constraint firstAttribute="width" constant="274" id="ezG-yh-Amf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="4at-H7-OqM" firstAttribute="leading" secondItem="MpQ-Lj-Jp9" secondAttribute="leading" id="1gA-Xx-5Z3"/>
+                            <constraint firstItem="Vue-QG-oZv" firstAttribute="centerX" secondItem="hNv-fg-h6d" secondAttribute="centerX" id="Bto-aE-G3X"/>
+                            <constraint firstItem="oLZ-Ra-eXx" firstAttribute="centerX" secondItem="hNv-fg-h6d" secondAttribute="centerX" id="CAA-FZ-sbG"/>
+                            <constraint firstAttribute="trailing" secondItem="oLZ-Ra-eXx" secondAttribute="trailing" constant="16" id="DRp-C8-kkV"/>
+                            <constraint firstItem="kbj-NK-1IC" firstAttribute="centerX" secondItem="hNv-fg-h6d" secondAttribute="centerX" id="G4s-rK-Qic"/>
+                            <constraint firstItem="oLZ-Ra-eXx" firstAttribute="leading" secondItem="hNv-fg-h6d" secondAttribute="leading" constant="16" id="OMl-WJ-npB"/>
+                            <constraint firstItem="4at-H7-OqM" firstAttribute="trailing" secondItem="MpQ-Lj-Jp9" secondAttribute="trailing" id="QAz-0N-mBu"/>
+                            <constraint firstItem="kbj-NK-1IC" firstAttribute="bottom" secondItem="MpQ-Lj-Jp9" secondAttribute="bottom" id="Z61-IP-k2w"/>
+                            <constraint firstItem="Vue-QG-oZv" firstAttribute="top" secondItem="MpQ-Lj-Jp9" secondAttribute="top" constant="68" id="epZ-vr-Ivn"/>
+                            <constraint firstItem="4at-H7-OqM" firstAttribute="top" secondItem="hNv-fg-h6d" secondAttribute="top" id="xqA-WO-L8P"/>
+                            <constraint firstItem="4at-H7-OqM" firstAttribute="bottom" secondItem="hNv-fg-h6d" secondAttribute="bottom" id="yV8-K9-mSm"/>
+                            <constraint firstItem="oLZ-Ra-eXx" firstAttribute="top" secondItem="Vue-QG-oZv" secondAttribute="bottom" constant="18" id="yq0-r8-BPO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MpQ-Lj-Jp9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKe-5o-7X2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="50"/>
+        </scene>
+        <!--Walk Through View Controller-->
+        <scene sceneID="cAz-0e-8G6">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughViewController" id="Cqb-NP-Cwp" customClass="WalkThroughViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5eu-EO-GDH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dS-6b-DJv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="0W0-mA-WQJ" kind="embed" id="wjc-hT-6FD"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-30-Kwx">
+                                <rect key="frame" x="0.0" y="551" width="375" height="116"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-xD-YNc">
+                                        <rect key="frame" x="168" y="8" width="39" height="37"/>
+                                    </pageControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o7-TW-1JZ">
+                                        <rect key="frame" x="59.5" y="48" width="256" height="44"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.73333333329999995" blue="0.6588235294" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="iKS-BF-lfJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="ozg-pq-YlP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                        <state key="normal" title="はじめる">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="4At-EC-PhC"/>
+                                    <constraint firstItem="6o7-TW-1JZ" firstAttribute="centerX" secondItem="l4f-30-Kwx" secondAttribute="centerX" id="G2u-oo-hYs"/>
+                                    <constraint firstItem="6o7-TW-1JZ" firstAttribute="top" secondItem="Avc-xD-YNc" secondAttribute="bottom" constant="3" id="HRN-u2-ogF"/>
+                                    <constraint firstItem="Avc-xD-YNc" firstAttribute="centerX" secondItem="l4f-30-Kwx" secondAttribute="centerX" id="RbD-Sh-Ua7"/>
+                                    <constraint firstItem="Avc-xD-YNc" firstAttribute="top" secondItem="l4f-30-Kwx" secondAttribute="top" constant="8" id="YXx-Ky-OuG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dS-6b-DJv" firstAttribute="top" secondItem="5eu-EO-GDH" secondAttribute="top" id="CMn-Sh-8AG"/>
+                            <constraint firstItem="l4f-30-Kwx" firstAttribute="bottom" secondItem="5eu-EO-GDH" secondAttribute="bottom" id="Krj-5G-9TO"/>
+                            <constraint firstItem="l4f-30-Kwx" firstAttribute="trailing" secondItem="XS1-f9-Cvo" secondAttribute="trailing" id="NrX-zf-91o"/>
+                            <constraint firstItem="0dS-6b-DJv" firstAttribute="bottom" secondItem="5eu-EO-GDH" secondAttribute="bottom" id="bhy-6s-qbq"/>
+                            <constraint firstItem="0dS-6b-DJv" firstAttribute="trailing" secondItem="5eu-EO-GDH" secondAttribute="trailing" id="flm-7r-YDa"/>
+                            <constraint firstItem="0dS-6b-DJv" firstAttribute="leading" secondItem="5eu-EO-GDH" secondAttribute="leading" id="tJo-Vc-eVY"/>
+                            <constraint firstItem="l4f-30-Kwx" firstAttribute="leading" secondItem="XS1-f9-Cvo" secondAttribute="leading" id="zST-Hw-mu8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XS1-f9-Cvo"/>
+                    </view>
+                    <connections>
+                        <outlet property="controlContainerHeight" destination="4At-EC-PhC" id="DAf-0M-T6r"/>
+                        <outlet property="pageControl" destination="Avc-xD-YNc" id="dn4-L7-eFX"/>
+                        <outlet property="startButton" destination="6o7-TW-1JZ" id="NT7-ru-xMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SF6-8c-sNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="-653.52323838080963"/>
+        </scene>
+        <!--Walk Through Page View Controller-->
+        <scene sceneID="d8X-P2-YOp">
+            <objects>
+                <pageViewController storyboardIdentifier="WalkThroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0W0-mA-WQJ" customClass="WalkThroughPageViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5K-NN-ujh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683" y="-655"/>
+        </scene>
+        <!--Walk Through Second View Controller-->
+        <scene sceneID="2hj-jq-l4U">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughSecondViewController" id="lPK-8K-X8y" customClass="WalkThroughSecondViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sXo-rJ-5Xn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OeT-lm-exD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カレンダー機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y4-la-0NQ">
+                                <rect key="frame" x="125.5" y="88" width="124.5" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aya-kH-ZoZ">
+                                <rect key="frame" x="16" y="124" width="343" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="確定した予定はカレンダーにまとめて表示。  チャットを遡る必要はありません。">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="6" minimumLineHeight="13" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_02" translatesAutoresizingMaskIntoConstraints="NO" id="bfK-BJ-FjQ">
+                                <rect key="frame" x="50.5" y="174" width="274" height="493"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="GYX-Yl-bc6"/>
+                                    <constraint firstAttribute="height" constant="493" id="QsB-aH-eEt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="OeT-lm-exD" firstAttribute="top" secondItem="sXo-rJ-5Xn" secondAttribute="top" id="72k-z5-EK2"/>
+                            <constraint firstItem="bfK-BJ-FjQ" firstAttribute="bottom" secondItem="DC5-T5-lpO" secondAttribute="bottom" id="9xh-ab-ifZ"/>
+                            <constraint firstItem="8Y4-la-0NQ" firstAttribute="centerX" secondItem="sXo-rJ-5Xn" secondAttribute="centerX" id="Ame-fF-Wie"/>
+                            <constraint firstItem="Aya-kH-ZoZ" firstAttribute="leading" secondItem="sXo-rJ-5Xn" secondAttribute="leading" constant="16" id="Bb4-YG-YpY"/>
+                            <constraint firstItem="Aya-kH-ZoZ" firstAttribute="centerX" secondItem="sXo-rJ-5Xn" secondAttribute="centerX" id="Yfr-eZ-miQ"/>
+                            <constraint firstItem="8Y4-la-0NQ" firstAttribute="top" secondItem="DC5-T5-lpO" secondAttribute="top" constant="68" id="f1X-5R-1Ly"/>
+                            <constraint firstAttribute="trailing" secondItem="Aya-kH-ZoZ" secondAttribute="trailing" constant="16" id="h7x-H2-VGe"/>
+                            <constraint firstItem="OeT-lm-exD" firstAttribute="trailing" secondItem="DC5-T5-lpO" secondAttribute="trailing" id="onF-8u-V37"/>
+                            <constraint firstItem="OeT-lm-exD" firstAttribute="leading" secondItem="DC5-T5-lpO" secondAttribute="leading" id="q0z-iq-Jzx"/>
+                            <constraint firstItem="Aya-kH-ZoZ" firstAttribute="top" secondItem="8Y4-la-0NQ" secondAttribute="bottom" constant="18" id="sWp-0z-qzf"/>
+                            <constraint firstItem="bfK-BJ-FjQ" firstAttribute="centerX" secondItem="sXo-rJ-5Xn" secondAttribute="centerX" id="w0d-Mx-u88"/>
+                            <constraint firstItem="OeT-lm-exD" firstAttribute="bottom" secondItem="sXo-rJ-5Xn" secondAttribute="bottom" id="zU1-7K-ezp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DC5-T5-lpO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0v-QU-7It" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="50"/>
+        </scene>
+        <!--Walk Through Third View Controller-->
+        <scene sceneID="5bA-Hv-PQh">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughThirdViewController" id="hww-Uq-dpT" customClass="WalkThroughThirdViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SGB-xN-gbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_bg" translatesAutoresizingMaskIntoConstraints="NO" id="yzu-kZ-YZA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8〜26時まで対応" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-rV-vOn">
+                                <rect key="frame" x="114.5" y="88" width="146.5" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQI-D0-nD4">
+                                <rect key="frame" x="16" y="124" width="343" height="34"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="対応可能な時間は朝8時から夜中の26時まで。 急な代行依頼、相談に対応します。">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="HiraginoSans-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkthrough_03" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-Qr-19L">
+                                <rect key="frame" x="50.5" y="174" width="274" height="493"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="493" id="8ZD-F2-1Vq"/>
+                                    <constraint firstAttribute="width" constant="274" id="OJJ-s4-k3O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="yzu-kZ-YZA" firstAttribute="top" secondItem="SGB-xN-gbS" secondAttribute="top" id="9Rf-91-alR"/>
+                            <constraint firstItem="hhn-rV-vOn" firstAttribute="top" secondItem="3dr-Is-UOI" secondAttribute="top" constant="68" id="Bwd-MR-ZLt"/>
+                            <constraint firstItem="yzu-kZ-YZA" firstAttribute="trailing" secondItem="3dr-Is-UOI" secondAttribute="trailing" id="CLI-km-WRx"/>
+                            <constraint firstItem="VI5-Qr-19L" firstAttribute="centerX" secondItem="SGB-xN-gbS" secondAttribute="centerX" id="F2H-6h-pjS"/>
+                            <constraint firstItem="wQI-D0-nD4" firstAttribute="top" secondItem="hhn-rV-vOn" secondAttribute="bottom" constant="18" id="G1u-ja-KX4"/>
+                            <constraint firstAttribute="trailing" secondItem="wQI-D0-nD4" secondAttribute="trailing" constant="16" id="PTN-m1-HUB"/>
+                            <constraint firstItem="hhn-rV-vOn" firstAttribute="centerX" secondItem="SGB-xN-gbS" secondAttribute="centerX" id="drr-l3-YDt"/>
+                            <constraint firstItem="VI5-Qr-19L" firstAttribute="bottom" secondItem="3dr-Is-UOI" secondAttribute="bottom" id="or8-VC-q1n"/>
+                            <constraint firstItem="wQI-D0-nD4" firstAttribute="centerX" secondItem="SGB-xN-gbS" secondAttribute="centerX" id="t1c-5K-laK"/>
+                            <constraint firstItem="wQI-D0-nD4" firstAttribute="leading" secondItem="SGB-xN-gbS" secondAttribute="leading" constant="16" id="u2h-UW-cnO"/>
+                            <constraint firstItem="yzu-kZ-YZA" firstAttribute="leading" secondItem="3dr-Is-UOI" secondAttribute="leading" id="zeA-eJ-uPg"/>
+                            <constraint firstItem="yzu-kZ-YZA" firstAttribute="bottom" secondItem="SGB-xN-gbS" secondAttribute="bottom" id="zeF-iJ-eDJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3dr-Is-UOI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBl-f8-JhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="walkthrough_01" width="274" height="493"/>
+        <image name="walkthrough_02" width="274" height="493"/>
+        <image name="walkthrough_03" width="274" height="493"/>
+        <image name="walkthrough_bg" width="375" height="667"/>
+    </resources>
+</document>

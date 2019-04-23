@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessDialog" customModule="Nene" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SuccessDialog" id="iN0-l3-epB" customClass="SuccessDialog" customModule="Nene" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="zOC-EX-pU2">
+                    <rect key="frame" x="64" y="24" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="6GK-O9-OH1"/>
+                        <constraint firstAttribute="height" constant="64" id="g4u-fZ-JIU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="認証が完了しました" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcB-Tc-hQ6">
+                    <rect key="frame" x="31" y="109" width="130" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="MrF-j0-rYY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DcB-Tc-hQ6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2wn-wK-GYb"/>
+                <constraint firstItem="zOC-EX-pU2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JZZ-OY-o8H"/>
+                <constraint firstItem="zOC-EX-pU2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="ejV-lc-vdc"/>
+                <constraint firstItem="DcB-Tc-hQ6" firstAttribute="top" secondItem="zOC-EX-pU2" secondAttribute="bottom" constant="21" id="uou-bU-Xe2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="messageLabel" destination="DcB-Tc-hQ6" id="mbF-Zl-RFM"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="298.2008995502249"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="success" width="64" height="64"/>
+    </resources>
+</document>

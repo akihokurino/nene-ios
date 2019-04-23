@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ny-35-M7k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ログイン-->
+        <scene sceneID="rOv-BV-TVe">
+            <objects>
+                <viewController storyboardIdentifier="PhoneNumberViewController" id="9Ny-35-M7k" customClass="PhoneNumberViewController" customModule="Nene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l30-Ur-E0U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuM-tP-BTU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaH-Vr-PaU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMSを利用してログインします。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h45-Ty-yFB">
+                                                <rect key="frame" x="82" y="32" width="211" height="14"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtB-Bn-Xdy">
+                                                <rect key="frame" x="59.5" y="78" width="256" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="電話番号を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="75l-F4-TtS">
+                                                        <rect key="frame" x="8" y="7" width="240" height="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" red="0.49019607840000001" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="deviceRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="75l-F4-TtS" firstAttribute="top" secondItem="mtB-Bn-Xdy" secondAttribute="top" constant="7" id="I4Z-BG-gTq"/>
+                                                    <constraint firstAttribute="bottom" secondItem="75l-F4-TtS" secondAttribute="bottom" constant="7" id="Jg3-sk-suI"/>
+                                                    <constraint firstItem="75l-F4-TtS" firstAttribute="leading" secondItem="mtB-Bn-Xdy" secondAttribute="leading" constant="8" id="X9d-Yq-ufT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="75l-F4-TtS" secondAttribute="trailing" constant="8" id="cHe-7P-XBc"/>
+                                                    <constraint firstAttribute="height" constant="44" id="j1q-l3-gOf"/>
+                                                    <constraint firstAttribute="width" constant="256" id="nEo-tR-CH1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H33-SK-RFC">
+                                                <rect key="frame" x="59.5" y="154" width="256" height="44"/>
+                                                <color key="backgroundColor" red="0.80000000000000004" green="0.73333333333333328" blue="0.6588235294117647" alpha="1" colorSpace="deviceRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="256" id="1jh-uJ-URp"/>
+                                                    <constraint firstAttribute="height" constant="44" id="OHW-wb-O9A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="SMS送信">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="h45-Ty-yFB" firstAttribute="top" secondItem="KaH-Vr-PaU" secondAttribute="top" constant="32" id="2W9-uc-mfS"/>
+                                            <constraint firstItem="H33-SK-RFC" firstAttribute="centerX" secondItem="KaH-Vr-PaU" secondAttribute="centerX" id="8o0-qu-4sr"/>
+                                            <constraint firstItem="mtB-Bn-Xdy" firstAttribute="centerX" secondItem="KaH-Vr-PaU" secondAttribute="centerX" id="9bk-4U-EZr"/>
+                                            <constraint firstItem="h45-Ty-yFB" firstAttribute="centerX" secondItem="KaH-Vr-PaU" secondAttribute="centerX" id="CfH-aL-Jmc"/>
+                                            <constraint firstItem="mtB-Bn-Xdy" firstAttribute="top" secondItem="h45-Ty-yFB" secondAttribute="bottom" constant="32" id="Q9r-0l-8OW"/>
+                                            <constraint firstItem="H33-SK-RFC" firstAttribute="top" secondItem="mtB-Bn-Xdy" secondAttribute="bottom" constant="32" id="jFW-ML-HPZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KaH-Vr-PaU" secondAttribute="trailing" id="5e1-82-2QU"/>
+                                    <constraint firstItem="KaH-Vr-PaU" firstAttribute="top" secondItem="LuM-tP-BTU" secondAttribute="top" id="6WV-UH-hto"/>
+                                    <constraint firstAttribute="bottom" secondItem="KaH-Vr-PaU" secondAttribute="bottom" id="MiO-NT-Iin"/>
+                                    <constraint firstItem="KaH-Vr-PaU" firstAttribute="leading" secondItem="LuM-tP-BTU" secondAttribute="leading" id="ldx-vE-5DY"/>
+                                    <constraint firstItem="KaH-Vr-PaU" firstAttribute="centerY" secondItem="LuM-tP-BTU" secondAttribute="centerY" id="qt1-Fz-kna"/>
+                                    <constraint firstItem="KaH-Vr-PaU" firstAttribute="centerX" secondItem="LuM-tP-BTU" secondAttribute="centerX" id="tFn-po-cBi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="LuM-tP-BTU" firstAttribute="bottom" secondItem="nmq-Mx-pMc" secondAttribute="bottom" id="Jkq-LJ-v1v"/>
+                            <constraint firstItem="LuM-tP-BTU" firstAttribute="trailing" secondItem="nmq-Mx-pMc" secondAttribute="trailing" id="OuC-Mz-ybU"/>
+                            <constraint firstItem="LuM-tP-BTU" firstAttribute="leading" secondItem="nmq-Mx-pMc" secondAttribute="leading" id="bEr-ZT-xF6"/>
+                            <constraint firstItem="LuM-tP-BTU" firstAttribute="top" secondItem="nmq-Mx-pMc" secondAttribute="top" id="h2a-Mt-Icf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nmq-Mx-pMc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ログイン" id="Rzg-kE-c0Z">
+                        <barButtonItem key="backBarButtonItem" title=" " id="RQV-bo-3FF"/>
+                        <barButtonItem key="leftBarButtonItem" image="icon_arrow" id="qb4-yC-V9t">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="backButton" destination="qb4-yC-V9t" id="DIg-wb-nNd"/>
+                        <outlet property="containerView" destination="KaH-Vr-PaU" id="Pdr-iD-uqH"/>
+                        <outlet property="phoneNumberField" destination="75l-F4-TtS" id="OAb-NK-4oJ"/>
+                        <outlet property="sendSMSButton" destination="H33-SK-RFC" id="yli-Y9-sVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtJ-bv-oP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485.60000000000002" y="-475.41229385307349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_arrow" width="24" height="24"/>
+    </resources>
+</document>
